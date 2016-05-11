@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0 5px;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*----------------*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #2f4154;
+  color: white;
+}
+
+.cake {
+  width: 14em;
+  display: block;
+  margin: 40px auto;
+}
+
+.gettingold {
+  text-align: center;
+  font-size: 1.5em;
+  margin: 10px 0px;
+}
+
+.friendly {
+  margin: 10px 0px;
+}
+
+.heart {
+  width: 2em;
+}
+
+.mike{
+  font-size: 3em;
+}
+
+/*#timer{
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 4em;
+}*/
+
+#countdown {
+  text-align: center;
+  font-size: 4em;
+  padding: 5px;
+  margin: 30px 0px;
+}
+
+.tdisplay{
+  font-size: 0.5em;
+}
+
+#one {
+   /* background-color: #3498db;*/
+   background-color: #1abc9c;
+   font-size: 1.8em;
+   border-radius: 8px;
+   width: 50%;
+   margin: 30px auto;
+   padding: 15px 0px;
+}
+
+#one p {
+  text-align: center;
+}
+
+.ortwo {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+#hbd {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 50px;
+}
+
+.kiss {
+  width:1em;
+}
+
+#two {
+  background-color: #f1c40f;
+  color: #22313F;
+  font-size: 1.8em;
+  border-radius: 8px;
+  width: 50%;
+  margin: 20px auto;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.clue1, .clue2 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.meet{
+  color: #e74c3c;
+}
+
+.lat{
+  margin-top: 15px;
+}
+
+.figure {
+  font-style: italic;
+  font-size: 0.7em;
+  margin: 15px 0px;
+}
+
+#three {
+  background-color: #f1c40f;
+  color: #22313F;
+  font-size: 1.8em;
+  border-radius: 8px;
+  width: 50%;
+  margin: 20px auto;
+  padding: 15px 0px;
+  text-align: center;
+}
+
+.taste {
+  color: #e74c3c;
+}
+
+.dinner {
+  margin: 15px 0;
+  font-size: 2em;
+}
+
+
+@media screen and (max-width: 800px) {
+    #one, #two, #three{
+        width: 100%;
+        border-radius: 0px;
+        font-size: 1.5em;
+        margin: 20px 0px;
+    }
+}
+
+

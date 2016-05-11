@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>You're Old.</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/main.css">
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+         <script type="text/javascript" src="js/jquery.countdown.js"></script>
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="icon"
+                type="image/png"
+                href="img/balloon.png">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <img class="cake" src="img/bdaycake.png"/>
+
+        <div class="gettingold">
+            <p class="mike">Mike,</p>
+            <p class="friendly">A friendly reminder of when you're getting closer to 30. Yes, 30.</p>
+            <img class="heart" src="img/heart.png"/>
+        </div>
+
+        <!-- <div id="timer"></div> -->
+
+        <div id="countdown"></div>
+
+        <div id="one">
+            <p>I can't wait to celebrate with you!</p>
+            <p>When time runs out, you will receive a clue</p>
+            <p class="ortwo">...or two!</p>
+        </div>
+
+        <div id="hbd">
+            <p class="happy">Happy Birthday My Love!<img class="kiss" src="img/kiss.png"/></p>
+        </div>
+
+        <div id="two">
+            <p class="clue1">Clue #1</p>
+            <p class="meet">Meet me here for 5:45pm</p>
+            <p class="lat">Latitude: 43.6452221</p>
+            <p>Longitude: -79.40005880000001</p>
+            <p class="figure">Can't figure it out? Give it 15 mins... ;)</p>
+        </div>
+
+        <div id="three">
+            <p class="clue2">Clue #2</p>
+            <p class="taste">Mmmm dinner will taste so good at..</p>
+            <p class="dinner">G _ _ _ O  1 _ _</p>
+        </div>
+
+
+
+       <script>
+
+           // $("#timer").countdown("2016/05/13", function(event) {
+           //      $(this).text(event.strftime('%D D | %H HR | %M MIN | %S SEC')
+           //      );
+           //  });
+
+            // set the date we're counting down to
+                var target_date = new Date("May 13, 2016").getTime();
+
+                // variables for time units
+                var days, hours, minutes, seconds;
+
+                // get tag element
+                var countdown = document.getElementById("countdown");
+
+                // update the tag with id "countdown" every 1 second
+                setInterval(function () {
+
+                    // find the amount of "seconds" between now and target
+                    var current_date = new Date().getTime();
+                    var seconds_left = (target_date - current_date) / 1000;
+
+                    // do some time calculations
+                    days = parseInt(seconds_left / 86400);
+                    seconds_left = seconds_left % 86400;
+
+                    hours = parseInt(seconds_left / 3600);
+                    seconds_left = seconds_left % 3600;
+
+                    minutes = parseInt(seconds_left / 60);
+                    seconds = parseInt(seconds_left % 60);
+
+                    // format countdown string + set tag value
+                    countdown.innerHTML = days + " <span class='tdisplay'>day(s)</span>"+"<br>"+ hours + " <span class='tdisplay'>hour(s)</span>"+"<br>"+ minutes + "<span class='tdisplay'> minute(s)</span>"+"<br>"+ seconds + " <span class='tdisplay'>second(s)</span>";
+
+                });
+
+
+           window.setInterval(function(){
+
+            var current = new Date();
+            var expiry  = new Date("May 13, 2016 00:00:00")
+            var expiry2 = new Date("May 13, 2016 00:15:00")
+
+
+            if(current.getTime()>expiry.getTime()){
+                $('#one').hide();
+                $('#hbd').show();
+                $('#two').show();
+                $('#three').hide();
+            }
+
+            if(current.getTime()>expiry2.getTime()){
+                $('#one').hide();
+                $('#hbd').show();
+                $('#two').show();
+                $('#three').show();
+            }
+
+            });
+
+            $('#one').show();
+            $('#hbd').hide();
+            $('#two').hide();
+            $('#three').hide();
+
+        </script>
+
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+        </script>
+
+
+    </body>
+</html>
